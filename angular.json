@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "kanishkanaik:build:production",
+            "firebaseProject": "kanishkanaik-b3089",
+            "firebaseHostingSite": "kanishkanaik-b3089"
+          }
         }
       }
     }

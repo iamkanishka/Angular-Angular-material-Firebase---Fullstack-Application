@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanishkanaik-b3089": {
+      "hosting": {
+        "kanishkanaik": [
+          "kanishkanaik-b3089"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanishkanaik-b3089"
+  }
+}
