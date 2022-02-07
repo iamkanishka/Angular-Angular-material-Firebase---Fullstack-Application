@@ -23,16 +23,8 @@ export class AppComponent  {
   title = 'CRUD Operation';
    myform: FormGroup;
 
-constructor(private afs:AngularFirestore,private fb:FormBuilder){}
-
-private detailcollection:AngularFirestoreCollection<details>;
-details:Observable<details[]>;
-showl:boolean=true;
-showu:boolean=false;
-detail:any;
-
-ngOnInit(): void {
-  
+constructor(private afs:AngularFirestore,private fb:FormBuilder){
+   
  
  this.detailcollection=this.afs.collection<details>('details');
  this.details=this.detailcollection.valueChanges();
@@ -63,6 +55,16 @@ ngOnInit(): void {
   ]],
  
   });
+}
+
+private detailcollection:AngularFirestoreCollection<details>;
+details:Observable<details[]>;
+showl:boolean=true;
+showu:boolean=false;
+detail:any;
+
+ngOnInit(): void {
+ 
 }
 
 get detailno(){
