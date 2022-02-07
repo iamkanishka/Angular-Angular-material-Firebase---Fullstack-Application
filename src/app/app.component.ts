@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore,ɵAngularFireSchedulers} from '@angular/fire';
+import { AngularFirestore,AngularFirestoreCollection } from '@angular/fire';
 import { FormBuilder,FormGroup,Validators} from '@angular/forms';
 import {  Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
